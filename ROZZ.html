@@ -139,8 +139,19 @@
     /* ── Mobile ── */
     @media (max-width: 320px) {
       .heading {
+        width: 100%;
+        font-size: 32px;
         left: 50%;
-        top: 18%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+      }
+
+      #head-goku{
+        width: 100%;
+        font-size: 32px;
+        left: 50%;
+        top: 14%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
       }
@@ -151,22 +162,23 @@
         top: 56% !important;
         left: 50% !important;
         transform: translate(-50%, -50%);
-        opacity: 0.65 !important;
+        opacity: 10 !important;
+        z-index: 2;
       }
 
       #img2 {
         width: 260px !important;
         height: 260px !important;
         top: 10% !important;
-        left: 52% !important;
+        left: 50% !important;
         transform: translate(-50%, 0%);
       }
 
       .glow {
         width: 10px !important;
         height: 10px !important;
-        top: 72% !important;
-        left: 50% !important;
+        top: 50% !important;
+        left: 59% !important;
       }
     }
   </style>
