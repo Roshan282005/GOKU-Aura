@@ -1,245 +1,255 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>G O K U</title>
-    </head>
-    <body>
+<html lang="en">
 
-        <style>
-  .glow {
-    width: 1.8%;
-    height: 3.4%;
-    position: absolute;
-    top: 49.3%;
-    left: 54.9%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background: radial-gradient(circle at 35% 35%,
-      #ffffff 0%,
-      #66aaff 25%,
-      #0033ff 55%,
-      #000080 100%
-    );
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G O K U</title>
 
-    box-shadow:
-      0 0 10px 4px rgba(100, 160, 255, 0.9),
-      0 0 30px 10px rgba(50, 100, 255, 0.7),
-      0 0 70px 25px rgba(0, 50, 255, 0.5),
-      0 0 140px 50px rgba(0, 0, 200, 0.3);
-
-    animation: energyBall 1s ease-in-out infinite;
-  }
-
-  @keyframes energyBall {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow:
-        0 0 15px 4px rgba(100, 160, 255, 0.9),
-        0 0 24px 8px rgba(87, 138, 219, 0.9),
-        0 0 30px 10px rgba(50, 100, 255, 0.7),
-        0 0 70px 25px rgba(0, 50, 255, 0.5),
-        0 0 100px 50px rgba(0, 0, 200, 0.3);
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1.15);
-      box-shadow:
-        0 0 80px 36px rgba(150, 200, 255, 1),
-        0 0 54px 20px rgba(87, 138, 219, 0.9),
-        0 0 70px 18px rgba(80, 140, 255, 0.85),
-        0 0 180px 40px rgba(30, 79, 255, 0.511),
-        0 0 520px 80px rgba(0, 0, 220, 0.35);
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow:
-        0 0 15px 4px rgba(100, 160, 255, 0.9),
-        0 0 24px 8px rgba(87, 138, 219, 0.9),
-        0 0 30px 10px rgba(50, 100, 255, 0.7),
-        0 0 70px 25px rgba(0, 50, 255, 0.5),
-        0 0 100px 50px rgba(0, 0, 200, 0.3);
-    }
-  }
-
-  .blow {
-    width: 1.8%;
-    height: 3.4%;
-    position: absolute;
-    top: 49.3%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background: radial-gradient(circle at 35% 35%,
-      #ffffff 0%,
-      #66aaff 25%,
-      #0033ff 55%,
-      #000080 100%
-    );
-
-    box-shadow:
-      0 0 10px 4px rgba(100, 160, 255, 0.9),
-      0 0 30px 10px rgba(50, 100, 255, 0.7),
-      0 0 70px 25px rgba(0, 50, 255, 0.5),
-      0 0 140px 50px rgba(0, 0, 200, 0.3);
-
-    animation: energyBall 1s ease-in-out infinite;
-  }
-
-  @keyframes energyBall {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow:
-        0 0 15px 4px rgba(100, 160, 255, 0.9),
-        0 0 24px 8px rgba(87, 138, 219, 0.9),
-        0 0 30px 10px rgba(50, 100, 255, 0.7),
-        0 0 70px 25px rgba(0, 50, 255, 0.5),
-        0 0 100px 50px rgba(0, 0, 200, 0.3);
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1.15);
-      box-shadow:
-        0 0 80px 36px rgba(150, 200, 255, 1),
-        0 0 54px 20px rgba(87, 138, 219, 0.9),
-        0 0 70px 18px rgba(80, 140, 255, 0.85),
-        0 0 180px 40px rgba(30, 79, 255, 0.511),
-        0 0 520px 80px rgba(0, 0, 220, 0.35);
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow:
-        0 0 15px 4px rgba(100, 160, 255, 0.9),
-        0 0 24px 8px rgba(87, 138, 219, 0.9),
-        0 0 30px 10px rgba(50, 100, 255, 0.7),
-        0 0 70px 25px rgba(0, 50, 255, 0.5),
-        0 0 100px 50px rgba(0, 0, 200, 0.3);
-    }
-  }
-
-  @media (max-width: 320px) {
-    /* Mobile tweaks for very small screens */
-    #h1,
-    #2h1 {
-      left: 50%;
-      top: 18%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap;
+  <style>
+    * {
+      box-sizing: border-box;
     }
 
-    #img1 {
-      width: 320px !important;
-      height: 320px !important;
-      top: 56% !important;
-      left: 50% !important;
-      transform: translate(-50%, -50%);
+    body {
+      background: rgb(255, 255, 255);
+      color: white;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    img {
+      display: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* ── Headings ── */
+    .heading {
+      font-size: 100px;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
       position: absolute;
-      opacity: 0.65 !important;
+      top: 20%;
+      left: 51.5%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    #head-goku {
+      font-size: 900%;
+      z-index: 3;
+    }
+
+    /* ── Images ── */
+    #img1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
     }
 
     #img2 {
-      width: 260px !important;
-      height: 260px !important;
-      top: 10% !important;
-      left: 52% !important;
-      transform: translate(-50%, 0%);
+      position: absolute;
+      top: 11.3%;
+      left: 56.2%;
+      transform: translate(-90%, 0%);
+      z-index: 2;
     }
 
-    .glow,
-    .blow {
-      width: 10px !important;
-      height: 10px !important;
-      top: 72% !important;
-      left: 50% !important;
+    /* ── Energy ball button ── */
+    .glow {
+      display: none;
+      width: 1.8%;
+      height: 3.4%;
+      position: absolute;
+      top: 38.3%;
+      left: 54.9%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background: radial-gradient(circle at 35% 35%,
+          #ffffff 0%,
+          #66aaff 25%,
+          #0033ff 55%,
+          #000080 100%);
+      box-shadow:
+        0 0 10px 4px rgba(100, 160, 255, 0.9),
+        0 0 30px 10px rgba(50, 100, 255, 0.7),
+        0 0 70px 25px rgba(0, 50, 255, 0.5),
+        0 0 140px 50px rgba(0, 0, 200, 0.3);
+      animation: energyBall 1s ease-in-out infinite;
     }
-  }
+
+    /* ── Click button ── */
+    .click {
+      width: 11.8%;
+      height: 5.4%;
+      position: absolute;
+      top: 38.3%;
+      left: 54.9%;
+      transform: translate(-100%, 40%);
+      z-index: 3;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background: rgb(29, 117, 249);
+      box-shadow:
+        0 0 10px 4px rgba(100, 160, 255, 0.9),
+        0 0 30px 10px rgba(50, 100, 255, 0.7),
+        0 0 70px 25px rgba(0, 50, 255, 0.5),
+        0 0 140px 50px rgba(0, 0, 200, 0.3);
+      }  
+
+    /* Single keyframe block — shared by both states */
+    @keyframes energyBall {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow:
+          0 0 15px 4px rgba(100, 160, 255, 0.9),
+          0 0 24px 8px rgba(87, 138, 219, 0.9),
+          0 0 30px 10px rgba(50, 100, 255, 0.7),
+          0 0 70px 25px rgba(0, 50, 255, 0.5),
+          0 0 100px 50px rgba(0, 0, 200, 0.3);
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.15);
+        box-shadow:
+          0 0 80px 36px rgba(150, 200, 255, 1),
+          0 0 54px 20px rgba(87, 138, 219, 0.9),
+          0 0 70px 18px rgba(80, 140, 255, 0.85),
+          0 0 180px 40px rgba(30, 79, 255, 0.511),
+          0 0 520px 80px rgba(0, 0, 220, 0.35);
+      }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 320px) {
+      .heading {
+        left: 50%;
+        top: 18%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+      }
+
+      #img1 {
+        width: 320px !important;
+        height: 320px !important;
+        top: 56% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        opacity: 0.65 !important;
+      }
+
+      #img2 {
+        width: 260px !important;
+        height: 260px !important;
+        top: 10% !important;
+        left: 52% !important;
+        transform: translate(-50%, 0%);
+      }
+
+      .glow {
+        width: 10px !important;
+        height: 10px !important;
+        top: 72% !important;
+        left: 50% !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Headings -->
+  <h1 id="head-kakarot" class="heading">K A K A R O T</h1>
+  <h1 id="head-goku" class="heading">G O K U</h1>
+
+  <!-- Images -->
+  <img id="img1" src="goku.jpg" width="750" height="750" style="z-index:3; opacity:0.59;">
+
+  <img id="img2" src="https://wallpapercave.com/wp/wp7473480.jpg" width="650" height="650">
+
+  <!-- Energy ball trigger button -->
+  <button class="glow" id="glowBtn"></button>
+  <button class="click" id="clcBtn">Click me!</button>
+
+  <script>
+    const body = document.querySelector('body');
+    const img1 = document.getElementById('img1');
+    const img2 = document.getElementById('img2');
+    const headKaka = document.getElementById('head-kakarot');
+    const headGoku = document.getElementById('head-goku');
+    const glowBtn = document.getElementById('glowBtn');
+    const clcBtn = document.getElementById('clcBtn');
 
 
-  body{
-    background: rgb(0, 0, 0);
-    color: white;
-    opacity: 0.8;   
-    
-  }
+    function gokuuu1() {
+      img1.style.display = 'block';
+      img1.style.opacity = '1';
+      img2.style.display = 'none';
+      headKaka.style.display = 'block';
+      headGoku.style.display = 'none';
+      body.style.background = 'white';
+      body.style.color = 'black';
+    }
 
-  img{
-    display: none;
-  }
+    function gokuuu2() {
+      img1.style.display = 'none';
+      img2.style.display = 'block';
+      img2.style.opacity = '1';
+      headKaka.style.display = 'none';
+      headGoku.style.display = 'block';
+      body.style.background = 'black';
+      body.style.color = 'white';
+    }
 
-  button{
-    cursor: pointer;
-  }
-</style>
-        
-        <h1 id="h1" style="font-size: 100px; width: 100%; font-family: 'poppins', sans-serif;
-         margin: 0; padding:0; text-align: center; position: absolute;
-         top: 20%; left: 51.5%; transform: translate(-50%, -50%);
-         display: none; " >
-            K A K A R O T
-        <!-- <center>
-        <video  width="450px" height="350px" style="opacity: 0.9; "
-         controls autoplay muted loop poster="goku.jpg">
-        <source  src="first.mp4" >
-        <source  src="first.webm"> 
-        </video>
-        </center>  -->
-        </h1>
-        <h1 id="2h1" style="font-size: 900%; width: 100%; font-family: 'poppins', sans-serif;
-         margin: 0; padding:0; text-align: center; position: absolute;
-         top: 20%; left: 51.5%; transform: translate(-50%, -50%);
-         display: none; z-index: 3; ">
-            G  O  K  U
-        </h1>
-        
-        <center>
-            <img id="img1" src="goku.jpg" width="750px" height="750px" style="z-index: 3; opacity: 59;">
-            <img id="img2" src="https://wallpapercave.com/wp/wp7473480.jpg" width="650px" height="650px"
-             style="z-index: 2; opacity: 90; position: absolute; top:11.3%; left: 56.2%; transform: translate(-90%, -0%);">
-             
-        </center>  
-        
-        <button class="glow"  ondblclick="gokuuu2()"  onclick="gokuuu1()"></button>
-        <!-- <button class="blow" onclick="gokuuu2()"></button> -->
-        <script>
-            var goku1=document.getElementById("img1");
-            var goku2=document.getElementById("img2");
-            var h1=document.getElementById("h1");
-            var head =document.getElementById("2h1");
-            var img1 =document.getElementById("img1");
-            var img2 =document.getElementById("img2");
-            var body =document.querySelector("body");
+    let lastTap = 0;
+    let tapTimer = null;
 
+    glowBtn.addEventListener('click', () => {
+      const now = Date.now();
+      const gap = now - lastTap;
 
+      if (gap < 300 && gap > 0) {
+        // Second tap arrived — cancel single-tap, fire double
+        clearTimeout(tapTimer);
+        gokuuu2();
+      } else {
+        // First tap — wait to see if second arrives
+        tapTimer = setTimeout(() => {
+          gokuuu1();
+        }, 300);
+      }
 
+      lastTap = now;
+    });
 
-            function gokuuu1(){
-                goku1.style.opacity ="10"
-                goku2.style.opacity ="0.2"
-                h1.style.opacity ="100"
-                h1.style.display = "block"
-                head.style.display = "none"
-                img1.style.display = "block"
-                img2.style.display = "none"
-                body.style.background = "white"
-                body.style.color = "black"
-            }
+    clcBtn.addEventListener('click', () => {
+      gokuuu1();
+      lastTap = 0;
+      clearTimeout(tapTimer);
+      tapTimer = null;
+      clcBtn.style.display = 'none';
+      glowBtn.style.display = 'block';
+      const style = glowBtn.style;
+      style.left = "54.9%";
+      style.top = "38.3%";
+    });
+  </script>
 
-            function gokuuu2(){
-                goku1.style.opacity ="0.2"
-                goku2.style.opacity ="100"
-                h1.style.opacity ="0"
-                head.style.display = "block"
-                h1.style.display = "none"
-                img1.style.display = "none"
-                img2.style.display = "block"
-                body.style.background = "black"
-                body.style.color = "white"
-            }
-        </script>
-    </body>
+</body>
+
 </html>
